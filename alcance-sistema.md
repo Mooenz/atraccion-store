@@ -66,6 +66,10 @@ Konva (canvas 2D)
 
 Zustand
 
+UI Admin
+
+shadcn
+
 Backend
 
 Next.js Route Handlers / Server Actions
@@ -101,6 +105,8 @@ visualizar detalle
 seleccionar talla
 
 visualizar precio por talla
+
+El diseno del home se realizara a partir de la imagen diseno-store.webp.
 
 2.2 Configurador de camiseta (core del sistema)
 
@@ -241,6 +247,8 @@ CRUD diseños
 CRUD zonas
 
 ver órdenes
+
+El front del admin se realizara con shadcn.
 
 3. Reglas de Negocio
 
@@ -397,6 +405,24 @@ Editor 2D
 Fase 4
 
 Deploy + optimización
+
+8. Avances hasta la fecha
+
+- Documentación base del proyecto (alcance, contratos, seguridad, pruebas, operaciones y playbook de agentes).
+- Stack inicial configurado con Next.js App Router, TypeScript y Tailwind.
+- Prisma configurado con Postgres y schema base para usuarios, productos, variantes, carrito, ordenes y diseño.
+- Autenticación con NextAuth (Credentials) y JWT, con integración Prisma.
+- Repositorios de datos para productos, carrito y ordenes.
+- Endpoints implementados: productos (GET/POST/PUT/DELETE + detalle), carrito (GET/POST/PATCH/DELETE), ordenes (GET/POST), admin (ordenes, design-assets, zonas).
+- Respuestas API estandarizadas con formato de contrato.
+- Tipado de session y role en NextAuth.
+- Ownership checks en carrito y ordenes.
+- README actualizado con guía de documentación y comando de desarrollo.
+
+Pendiente inmediato (según gaps detectados)
+
+- Paginacion y filtros en productos.
+- Tests de rutas admin y CRUDs.
 
 Fase 5 (futuro)
 
